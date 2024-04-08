@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-gradient {
+    animation: gradientAnimation 10s ease infinite;
+    /* Change animation duration as needed */
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    height: 350px;
+    width: 350px;
+    border: 10px solid #0000;
+    border-radius: 12px;
+    background: linear-gradient(#ffff, #ffff) padding-box, linear-gradient(var(--angle),
+            #331076,
+            #63082d) border-box;
+    animation: 2s rotate linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+.boxxl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    height: 600px;
+    width: 1500 px;
+    border-top: 10px solid #0000;
+    border-left: 10px solid #0000;
+    border-bottom: 10px solid #0000;
+    border-right: 10px solid #0000;
+    border-radius: 5px;
+    background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(var(--angle),
+            #331076,
+            #63082d) border-box;
+    animation: 2s rotate linear infinite;
+}
+
+.gradient-border {
+    border-top-width: 20px;
+    border-left-width: 20px;
+    border-style: double;
+    border-radius: 5rem;
+    border-image:
+        linear-gradient(to right, #0d0d4d, #800080) 1
+}
+
+.gradient-border2 {
+    border-top-width: 15px;
+    border-left-width: 15px;
+    border-bottom-width: 15px;
+    border-right-width: 15px;
+    border-style: double;
+    border-radius: 7rem;
+    border-image:
+        linear-gradient(to right, #0d0d4d, #800080) 1
+}
+
+.double-border {
+    border-top-width: 5px;
+    border-left-width: 5px;
+    border-style: double;
+    border-image:
+        linear-gradient(to right, #0d0d4d, #800080) 1
+}
+
+.double-border2 {
+    border-bottom-width: 10px;
+    border-right-width: 10px;
+    border-style: double;
+    border-image:
+        linear-gradient(to right, #0d0d4d, #800080, #0000) 1
+}
+
+.double-border3 {
+    border-left-width: 5px;
+    border-style: double;
+    border-image:
+        linear-gradient(to top, #0d0d4d, #800080) 1
+}
+
+.underline-text {
+    border-bottom: 2px solid #800080;
+    display: inline-block;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #7d008b, #1b086a, #63082d);
+    -webkit-background-clip: text;
+    /* For Safari */
+    -webkit-text-fill-color: transparent;
+    /* For Safari */
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.bord {
+    /* Set the width and height of the div */
+    width: 200px;
+    height: 100px;
+
+    /* Add padding to the div */
+    padding: 10px;
+
+    /* Border for top-left and bottom-right corners */
+    border-top-left-radius: 20px;
+    /* Adjust as needed */
+    border-bottom-right-radius: 20px;
+    /* Adjust as needed */
+
+    /* Apply gradient to the top-left and bottom-right corners */
+    background: linear-gradient(to bottom right, #f0f, #00f);
+}
