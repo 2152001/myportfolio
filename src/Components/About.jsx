@@ -7,7 +7,7 @@ export default function About() {
             <div className=' flex flex-row justify-between items-center w-[70%] h-[70%] border rounded-3xl border-slate-400'>
                 <div className=' h-full w-[50%] flex flex-col justify-center items-center'>
                     <div className=' h-[50%] w-[100%] flex flex-row items-center justify-center '>
-                        <div style={{ backgroundImage: `url('../../public/Toka.jpg')` }} className='border rounded-lg  w-[25%] h-[50%] bg-cover bg-center'>
+                        <div style={{ backgroundImage: `url('../../Toka.jpg')` }} className='border rounded-lg  w-[25%] h-[50%] bg-cover bg-center'>
                         </div>
                         <div className='flex flex-col  w-[40%] h-[50%] ml-[3rem] justify-center text-black '>
                             <div className='flex flex-row'>
